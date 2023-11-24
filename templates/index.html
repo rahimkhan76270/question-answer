@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question and Answer Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            color: #fff;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 50px auto;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #444;
+            border-radius: 4px;
+            background-color: #555;
+            color: #fff;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/" method="POST">
+        <label for="question">Question:</label>
+        <input type="text" name="question" id="question" required>
+        <br>
+        <label for="ans">Answer:</label>
+        <input type="text" name="ans" id="ans" required>
+        <br>
+        <button type="submit">Submit</button>
+
+        <!-- Button to open a new window -->
+        <button onclick="openNewWindow()">View Questions</button>
+
+        <script>
+            function openNewWindow() {
+                // Replace 'https://example.com' with your desired link
+                window.open('https://drive.google.com/drive/folders/1--xJfoGKUQqqNwFrcpyVsuoFFW_7U3r7?usp=sharing', '_blank');
+            }
+        </script>
+    </form>
+</body>
+
+</html>
